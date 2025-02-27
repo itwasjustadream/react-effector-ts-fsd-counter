@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  background-color: #f0f7f8;
+  color: #425a65;
+}
+
+div {
+  font-size: 6rem;
+}
+
+.button__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  width: 100%;
+  max-width: 300px; 
+}
+
+.button__group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; 
+}
+
+.button__reset {
+  border-radius: 1rem;
+  width: 60%; 
+}
+
+button {
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px #cfd8dc;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: inherit;
+  border-radius: 100%;
+  outline: none;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+
+  &:hover {
+    background-color: #cfd8dc;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px #425a65;
+  }
+}
+
+.negative {
+  color: #ff1744;
+}
+
+.positive {
+  color: #2abf77;
+}
